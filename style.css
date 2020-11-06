@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins, sans-serif;
+	background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-wrap: break-word;
+}
+
+.message,
+.link,
+.display,
+.spinner {
+	width: 70%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 15rem 15rem;
+	padding: 2rem;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.message,
+.link {
+	align-items: center;
+}
+
+.spinner {
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	width: 90%;
+	padding: 12px 20px;
+	margin: 25px;
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	transition: 0.1s ease-out;
+}
+
+input:focus {
+	border-bottom: 1.5px solid rgb(28, 173, 221);
+}
+
+.create-button {
+	border-radius: 4px;
+	background: linear-gradient(to right, #38ef7d, #11998e) !important;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 10px;
+	width: 200px;
+	transition: all 0.4s;
+	cursor: pointer;
+	margin: 5px;
+}
+.create-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.4s;
+}
+.create-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.create-button:hover span {
+	padding-right: 25px;
+}
+
+.create-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+label {
+	font-size: 1.4rem;
+	color: rgb(63, 60, 60);
+}
+
+#create-own {
+	color: #38a6ef;
+	font-size: 1.2rem;
+}
+
+.hide {
+	display: none;
+}
+.copy-btn {
+	font-size: 2rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.copy-btn:hover {
+	color: #3872ef;
+}
+
+#spinner-id {
+	height: 100px;
+	width: 100px;
+}

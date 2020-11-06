@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./app.js" defer></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+			integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+			crossorigin="anonymous"
+			defer
+		></script>
+		<title>Message Sharing</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="spinner hide">
+				<img src="./spinner.svg" id="spinner-id" alt="" />
+			</div>
+			<div class="message">
+				<input
+					type="text"
+					id="message-input"
+					placeholder="Enter a secret message"
+					autocomplete="off"
+				/>
+				<div class="button_cont" align="center">
+					<a class="create-button"><span>Create</span></a>
+				</div>
+			</div>
+			<div class="link hide">
+				<label for="link-input">Share this link with a friend</label>
+				<input type="text" id="link-input" autocomplete="off" />
+				<div class="copy-btn">
+					<i class="far fa-clipboard"></i>
+				</div>
+			</div>
+			<div class="display hide">
+				<h1></h1>
+				<a href="./index.html" id="create-own">
+					Create your own secret message
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
